@@ -10,17 +10,17 @@ const route = require("./routes");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(
-  express.urlencoded({
-    extended: true,
-  })
+    express.urlencoded({
+        extended: true,
+    })
 );
 app.use(express.json());
 
 app.use(morgan("combined"));
 
 const hbs = exphbs.create({
-  /* config */
-  extname: ".hbs",
+    /* config */
+    extname: ".hbs",
 });
 app.engine("hbs", hbs.engine);
 app.set("view engine", "hbs");
