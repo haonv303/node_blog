@@ -1,11 +1,16 @@
 const express = require("express");
 const path = require("path");
 const exphbs = require("express-handlebars");
-const app = express();
 const morgan = require("morgan");
-const port = 8080;
 
 const route = require("./routes");
+const db = require("../src/config/db");
+
+//connect db
+db.connect();
+
+const app = express();
+const port = 8080;
 
 app.use(express.static(path.join(__dirname, "public")));
 
