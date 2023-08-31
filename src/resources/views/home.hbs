@@ -1,1 +1,20 @@
-<h1>Home pgae</h1>
+<h1 class="text-center text-dark border-bottom">Khóa Học Front-End </h1>
+
+<div class="mt-3">
+    <div class="row">
+
+        {{#each courses}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card mt-4">
+                <img src="https://f.howkteam.vn/Upload/cke/images/1_LOGO%20SHOW%20WEB/8_CTDL%26GT/Intro.jpg"
+                    class="card-img-top " alt="{{this.name}}">
+                <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <p class="card-text">{{this.description}}</p>
+                    <a href="#" class="btn btn-primary">Bắt Đầu Khóa Học</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
