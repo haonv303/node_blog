@@ -1,0 +1,33 @@
+<div class="container mt-3">
+    <h2>Khóa Học Của Tôi</h2>
+    <p>Khóa học này mang đến một trải nghiệm học tập đáng nhớ và giá trị. Nó được chú trọng xây dựng trên nền tảng kiến
+        thức và kỹ năng cần thiết, đồng thời cung cấp cơ hội cho sự phát triển cá nhân và khám phá tiềm năng bên trong.
+        Tôi tin rằng khóa học này sẽ tạo điều kiện thuận lợi để bạn đạt được mục tiêu và phát triển bản thân</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên Khóa Học</th>
+                <th scope="col">Trình Độ</th>
+                <th scope="col">Ngày Tạo</th>
+                <th class="text-center" scope="col" colspan="2">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each courses}}
+            <tr>
+                <td>{{sum @index 1}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.level}}</td>
+                <td>{{this.createdAt}}</td>
+                <td>
+                    <a class="btn btn-link" href="/courses/{{this._id}}/edit"><i class="bi bi-pencil-square"></i></a>
+                </td>
+                <td>
+                    <a class="btn text-danger" href="/course/{{this._id}}/delete"><i class="bi bi-trash3"></i></a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

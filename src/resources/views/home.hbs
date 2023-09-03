@@ -1,20 +1,22 @@
 <h1 class="text-center text-dark border-bottom">Khóa Học Front-End </h1>
-
 <div class="mt-3">
-    <div class="row">
+    <div class="row d-flex align-items-stretch">
 
         {{#each courses}}
         <div class="col-sm-6 col-lg-4">
-            <div class="card mt-4">
+
+            <div class="card my-4">
                 <a href="/courses/{{this.slug}}">
-                    <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}"></a>
-                <div class="card-body"><a href="/courses/{{this.slug}}">
-                        <h5 class="card-title">{{this.name}}</h5>
+                    <img style="width: 100%;" class="card-img-top" src="{{this.image}}" alt="{{this.name}}"></a>
+                <div class="card-body">
+                    <a class="nav-link" href="/courses/{{this.slug}}">
+                        <h4 class="card-title">{{this.name}}</h4>
                     </a>
                     <p class="card-text">{{this.description}}</p>
                     <a href="#" class="btn btn-primary">Bắt Đầu Khóa Học</a>
                 </div>
             </div>
+
         </div>
         {{/each}}
     </div>

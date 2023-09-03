@@ -1,2 +1,8 @@
 h1 {
-  color: #a2958f; }
+  color: #223f70; }
+
+.user-avatar {
+  width: 28px;
+  height: 28px px;
+  border-radius: 50%;
+  margin-right: 4px; }

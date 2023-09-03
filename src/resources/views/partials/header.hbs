@@ -1,26 +1,35 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Logo Blog</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="container">
+    <a class="navbar-brand" href="/home">Logo HCH</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home
-          <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            <img class="user-avatar"
+              src="https://lh3.googleusercontent.com/ogw/AGvuzYZW8yMPGBrlfh2IxjmzANY0oN0jg-VxORHjTRN5Eg=s32-c-mo"
+              alt="">
+            Hảo Nguyễn Văn</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item nav-link" href="/me/stored/courses">Khóa Học Của Tôi</a></li>
+            <li><a class="dropdown-item nav-link" href="/me/stored/courses">Bài Viết Của Tôi</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item nav-link" href="/courses/create">Thêm Khóa Học</a></li>
+            <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item nav-link" href="#">Đăng Xuất</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </nav>
